@@ -9,6 +9,9 @@
     font-size: 0px;
 }
 
+body, html {
+    height: 100%;
+}
 /*http://www.csszengarden.com/214/verdemoderna.woff*/
 
 @media (max-width: 420px) {
@@ -177,7 +180,7 @@
   margin-top:40px;
   /*font-family: "verde moderna";*/
   /*background-image: url("koi.jpg");*/
-  height:234px;
+  height:200px;
   width:385px;
   background-image: url("../images/koi_sm.jpg");
   background-repeat: no-repeat;
@@ -213,12 +216,13 @@ span.white{
   position: relative;
   text-align: center;
   background-color: #134347;
-  display: inline-block;
+  /* display: block; */
   z-index:5;
   margin-top:-34px;
   font-size:20px;
   font-family: verdemoderna;
   color: white;
+  margin:0 auto;
   }
 .verde {
   margin-top:25px;
@@ -541,13 +545,14 @@ margin-left: 23px;
       height:100px;
       text-align: center;
       background-color: #134347;
-      display: inline-block;
+      /* display: inline-block; */
       z-index:5;
       margin-top:-20px;
       font-size:20px;
       font-family: "verdemoderna";
       color: white;
       position: relative;
+      margin:0 auto;
   }
   .verde {
       margin-top:25px;
@@ -888,13 +893,42 @@ img.arrow{
       position: absolute;
       z-index:0;
   } */
+  .green-block {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      text-align: center;
+      background-color: #134347;
+      z-index: 5;
+      margin-top: 0px;
+      font-size: 20px;
+      font-family: verdemoderna;
+      color: white;
+      margin:0 auto;
+  }
+  verde {
+    margin-top:25px;
+    display: block;
+    width:53px;
+    height:48px;
+    padding: 5px;
+    /* opacity: ; */
+    text-decoration: none;
+    /*position: absolute;*/
+    z-index: 20;
+    		/*transition: color 0.25s ease-out, box-shadow 0.25s ease-out;*/
+  }
+  /* .center{
+    margin:0 auto;
+    text-align: center;
+  } */
   .main-right-split{
     width:34%;
-    height: 490%;
+    min-height: 1905px;
     background-color: rgba(158, 184, 171, .15);
     float: right;
     position: relative;
-    width:34%;
+
     z-index: -1;
   }
   .right-overlay{
@@ -959,6 +993,7 @@ img.arrow{
     background-image: url(../images/contours.png), url(../images/gridlines.png), url(../images/noise.png), url(../images/koi-md.jpg);
     background-size: 50% auto, auto, auto, cover;
     z-index:50;
+
   }
 .partGreenBottom{
     display: none;
@@ -990,4 +1025,6 @@ p.partGreenSection {
 .section.require{
   padding-bottom: 5px;
 }
+
+
 }
