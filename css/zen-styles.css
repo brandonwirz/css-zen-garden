@@ -14,7 +14,7 @@ body, html {
 }
 /*http://www.csszengarden.com/214/verdemoderna.woff*/
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
 
   #container{
     position:relative;
@@ -118,9 +118,11 @@ body, html {
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
     top: 120px;
-    z-index:5;
+    z-index:100;
     /*left: 120px;*/
-
+  }
+  .nav-button:hover{
+    color:white;
   }
 
   .main{
@@ -346,7 +348,7 @@ margin-left: 23px;
 
 
 /*<!--//////////////////////////////////////////////-->*/
-@media (min-width: 420px) {
+@media screen and (min-width: 420px) {
 
   /* #headerImg{
     background-image: url("../images/huntington-220-md.jpg");
@@ -939,7 +941,6 @@ img.arrow{
     right:0;
     position: absolute;
     width:34%;
-    z-index: 60;
   }
 
   /* .left{
